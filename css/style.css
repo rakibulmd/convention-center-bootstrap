@@ -1,0 +1,127 @@
+/* ======= Import Google Font "Poppins" ========= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+/* ======= Variables ========= */
+:root {
+    --primary-color: #E02C6D;
+    --image-overlay: rgba(0, 0, 0, 0.7);
+    --secondary-color: #FFF;
+}
+
+/* ======= Custom Color ========= */
+.grandcity-text-primary {
+    color: var(--primary-color);
+}
+
+.grandcity-bg-primary {
+    background: rgba(255, 246, 250, 0.90);
+}
+
+.grandcity-bg-secondary {
+    background: var(--primary-color);
+}
+
+.grandcity-bg-secondary-opac {
+    background: rgba(224, 46, 111, 0.9);
+}
+
+/* ======= NAVBAR LINK  Hover Effect ========= */
+.nav-item .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav-item .nav-link.cta:hover {
+    background-color: var(--secondary-color) !important;
+}
+
+/* ======= Image Slider Background  & Overlay ========= */
+/* ======= Background used to apply overlay effect  ========= */
+.carousel-item1 {
+    background: url(../img/slider/wedding-event.jpg) center center/cover;
+}
+
+.carousel-item2 {
+    background: url(../img/slider/corporate-event.jpg) center center/cover;
+}
+
+.carousel-item3 {
+    background: url(../img/slider/launch-event.jpg) center center/cover;
+}
+
+.carousel-item4 {
+    background: url(../img/slider/esports-event.jpg) center center/cover;
+}
+
+.slider-img-overlay {
+    background: var(--image-overlay);
+}
+
+/* ======= Feature Box section interaction ========= */
+.feature-box {
+    min-height: 165px;
+}
+
+.feature-box p {
+    color: transparent;
+}
+
+.feature:hover .feature-box p {
+    text-align: justify;
+    transition: 300ms;
+    color: var(--secondary-color) !important;
+}
+
+.feature:hover .feature-box {
+    background: var(--primary-color) !important;
+    transition: 400ms;
+}
+
+/* ======= Pricing hot card border radius ========= */
+.pricing-hot {
+    border-radius: 15px;
+}
+
+/* ======= Pricing hot card background effect ========= */
+.bg-col {
+    background: url(../img/pricing-hot.png) no-repeat center center/cover;
+}
+
+/* ======= Pricing card Hover Effect ========= */
+#packages .card{
+    min-height: 400px;
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),
+    .3s box-shadow,
+    .3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+}
+
+#packages .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    z-index: 2;
+}
+
+/* ======= Feedback card Hover Effect ========= */
+#feedback .card {
+    min-height: 375px !important;
+}
+
+#feedback .card{
+    transition: 250ms;
+  cursor: pointer;
+}
+
+#feedback .card:hover{
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    transform: scale(1.05);
+}
+
+/* ======= Toast Decoration border effect ========= */
+.toast-body {
+    border-left: 15px solid var(--primary-color);
+}
